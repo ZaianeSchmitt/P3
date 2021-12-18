@@ -1,0 +1,24 @@
+
+@function shadow-shift($color){
+    @if (lightness($color) < 10% ) {
+        @return lighten($color, 20%);
+    }@else{
+        @return darken($color, 20%);
+    }
+}
+
+@function color-shift-bckgd($color, $background-color){
+    @if (lightness($background-color) >25%) and (lightness($color) <10%) {
+        @return lighten($color, 40%);
+    }@else{
+        @return darken($color, 30%);
+    }
+}
+
+@function lightening($color) {
+    @if (lightness($color) <15%) {
+        @return lighten($color, 40%);
+    }@else{
+        @return darken($color, 20%);
+    }
+}

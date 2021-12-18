@@ -1,3 +1,24 @@
 $color-primary: #9356DC;
 $color-secondary: #FF79DA;
 $color-tertiary: #99E2D0;
+$color-basic1: #FFFFFF;
+$color-basic2: #000000;
+
+$color-intro-loc: #EAEAEA;
+$color-bckgd-menu: #F6F6F6;
+
+$footer-bckground-clr: #353535;
+$footer-txt-clr: #FFFFFF;
+
+$color-txt-default: #000000;
+$color-txt-1: #FFFFFF;
+$font-title: Shrikhand;
+$font-text: Roboto;
+
+$breakpoints: (
+    x-small: 320px,
+    small: 599px,
+    medium: 768px,
+    large: 1024px,
+    x-large: 1200px,
+)
