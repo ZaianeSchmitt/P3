@@ -1,4 +1,190 @@
-.fa-solid {
-  font-size: 30px;
-  color: green;
+/*Minireset*/
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css");
+@import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap");
+a {
+  text-decoration: none;
+}
+a:active {
+  color: #000000;
+}
+a:visited {
+  color: #000000;
+}
+
+.main-wrapper {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
+}
+
+html {
+  font-size: 16px;
+}
+
+.main-wrapper {
+  font-family: Roboto;
+}
+
+.concept__title {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+.concept__txt {
+  font-size: 1.3rem;
+  color: #666666;
+}
+
+.meals__title {
+  font-family: Shrikhand;
+  font-size: 1.7rem;
+}
+
+.dish__title {
+  font-size: 1.1rem;
+  font-weight: bold;
+}
+.dish__desc {
+  color: #666666;
+}
+
+.footer__list > li {
+  color: #FFFFFF;
+}
+
+.footer__link {
+  color: #FFFFFF;
+}
+.footer__link:visited {
+  color: #FFFFFF;
+}
+
+.btn-main {
+  font-family: Roboto;
+  color: #FFFFFF;
+  font-size: 1.15rem;
+}
+
+.btn-main {
+  display: block;
+  padding: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 30px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+  border: none;
+}
+
+.intro__btn {
+  width: 250px;
+}
+
+.meals-ordrer__btn {
+  width: 200px;
+}
+
+.meals {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #F6F6F6;
+  margin-top: -60px;
+  position: relative;
+  padding-top: 30px;
+}
+.meals__title-ico {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 40px;
+}
+.meals__ico-heart {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.meals .fa-heart {
+  font-size: 25px;
+}
+
+.dish {
+  background-color: #FFFFFF;
+  border-radius: 15px;
+  box-shadow: 0px 4px 8px 0px rgba(0, 0, 0, 0.2);
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+header .header__logo {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 190px;
+}
+header .fa-arrow-left {
+  position: absolute;
+}
+
+footer {
+  background-color: #353535;
+}
+
+.footer__logo {
+  filter: invert(92%) sepia(95%) saturate(27%) hue-rotate(253deg) brightness(106%) contrast(100%);
+  width: 100px;
+  margin: 30px 0px 20px 30px;
+}
+
+.footer__list {
+  padding: 0px 0px 20px 30px;
+}
+
+.footer__ico {
+  display: flex;
+  align-items: center;
+}
+.footer__ico .fa-utensils, .footer__ico .fa-handshake-angle {
+  font-size: 0.8rem;
+  margin-right: 8px;
+  color: #FFFFFF;
+}
+
+.footer__list > li {
+  margin-bottom: 10px;
+}
+
+.footer__link-fork {
+  margin-left: 5px;
+}
+
+.intro {
+  background-color: #F6F6F6;
+  min-height: 390px;
+}
+.intro__location {
+  display: flex;
+  justify-content: center;
+  padding: 18px;
+  background-color: #EAEAEA;
+  box-shadow: 0px 4px 3px -2px #b7b7b7 inset;
+}
+
+.location__ico {
+  position: absolute;
+  margin-left: -180px;
+}
+.location__ico .fa-location-dot {
+  font-size: 18px;
+}
+
+.concept {
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 35px;
+}
+.concept__title {
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 10px;
 }/*# sourceMappingURL=main.css.map */

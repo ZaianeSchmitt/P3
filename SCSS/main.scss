@@ -4,11 +4,7 @@
 @import "./base/base";
 @import "./base/typography";
 @import "./components/buttons";
+@import "./components/menu";
 @import "./layouts/header";
 @import "./layouts/footer";
-
-
-.fa-solid {
-    font-size: 30px;
-    color: green;
-}
+@import "./pages/index";
