@@ -1,0 +1,18 @@
+/*Minireset*/
+@import url("https://cdn.jsdelivr.net/gh/jgthms/minireset.css@master/minireset.min.css"); 
+
+a {
+    text-decoration: none;
+    &:active {
+      color: #000000
+    }
+    &:visited {
+      color: #000000;
+    }
+  }
+  
+.main-wrapper {
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+    }

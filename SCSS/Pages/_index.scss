@@ -1,0 +1,32 @@
+
+.intro {
+    background-color: $color-bckgd-menu;
+    min-height: 390px;
+    &__location {
+        display: flex;
+        justify-content: center;
+        padding: 18px;
+        background-color: $color-intro-loc;
+        box-shadow: 0px 4px 3px -2px shadow-shift($color-intro-loc) inset;
+    }
+}
+
+.location__ico {
+    position: absolute;
+    margin-left: -180px;
+    .fa-location-dot {
+        font-size: 18px;
+    }
+}
+
+.concept {
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 35px;
+    &__title {
+        padding-left: 60px;
+        padding-right: 60px;
+        margin-bottom: 10px;
+    }
+}

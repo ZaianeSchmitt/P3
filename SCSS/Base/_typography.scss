@@ -1,0 +1,59 @@
+@import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+html {
+  font-size: 16px;
+}
+
+.main-wrapper {
+    font-family: $font-text;
+  }
+
+// INDEX //
+.concept {
+  &__title {
+      font-size: 1.6rem;
+      font-weight: bold;
+    }
+  &__txt {
+    font-size: 1.3rem;
+    color: color-shift-bckgd($color-txt-default,$color-intro-loc);
+    }
+}
+
+// MENU //
+.meals {
+  &__title {
+    font-family: $font-title;
+    font-size: 1.7rem;
+  }
+}
+
+.dish {
+  &__title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  }
+  &__desc {
+    color: lightening($color-txt-default)
+  }
+}
+
+// FOOTER //
+.footer__list > li {
+  color: $color-txt-1;
+}
+
+.footer__link {
+  color: $color-txt-1;
+  &:visited {
+      color: $color-txt-1;
+  }
+}
+
+// BUTTON //
+.btn-main {
+  font-family: $font-text;
+  color: $color-txt-1;
+  font-size: 1.15rem;
+}
