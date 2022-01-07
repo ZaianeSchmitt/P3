@@ -1,0 +1,12 @@
+.number__circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $color-txt-1;
+    background: $color-primary;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    min-width: 25px;
+    min-height: 25px;
+}

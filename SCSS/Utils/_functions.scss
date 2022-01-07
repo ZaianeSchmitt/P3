@@ -15,10 +15,26 @@
     }
 }
 
-@function lightening($color) {
+@function lightening($color){
     @if (lightness($color) <15%) {
         @return lighten($color, 40%);
     }@else{
+        @return darken($color, 40%);
+    }
+}
+
+@function vanished($color){
+    @if (lightness($color) < 20% ) {
+        @return lighten($color, 50%);
+    }@else{
         @return darken($color, 20%);
+    }
+}
+
+@function lighten-gradient($color){
+    @if (lightness($color) <80%) {
+        @return lighten($color, 5%);
+    }@else{
+        @return darken($color, 10%);
     }
 }

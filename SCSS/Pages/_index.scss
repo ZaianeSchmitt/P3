@@ -1,7 +1,7 @@
 
 .intro {
     background-color: $color-bckgd-menu;
-    min-height: 390px;
+    min-height: 380px;
     &__location {
         display: flex;
         justify-content: center;
@@ -29,4 +29,96 @@
         padding-right: 60px;
         margin-bottom: 10px;
     }
+    &__txt {
+        margin: auto 5%;
+    }
 }
+
+.process {
+    padding-top: 50px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-bottom: 50px;
+    &__steps {
+        margin-top: 30px;
+    }
+    &__title {
+        margin-left: -10px;
+    }
+}
+
+.steps {
+    display: flex;
+    align-items: center;
+    background-color: $color-bckgd-menu;
+    border-radius: 20px;
+    @include shadow-primary;
+    margin-bottom: 25px;
+    padding: 30px 30px 25px 0px;
+    transition: 0.25s;
+    &:hover {
+        background-color: lighten($color-primary, 35%);
+        .vanished {
+            color: $color-primary;
+        }
+    }
+    &__nb-circle {
+        margin-left: -12px;
+    }
+    .vanished {
+        font-size: 1.2rem;
+        color: vanished($color-txt-default);
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+    .fa-mobile-screen-button {
+        margin-right: 25px;
+    }
+}
+
+.restaurant-index {
+    padding-top: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $color-bckgd-menu;
+}
+
+.restaurants-list {
+    margin-top: 30px;
+    padding-bottom: 50px;
+}
+
+.new-restaurant__container {
+    position: absolute;
+    top: 10px;
+    right: 100px;
+}
+
+.restaurant-card {
+    position: relative;
+    height: 270px;
+    max-height: 270px;
+    @include shadow-primary;
+    transition: 0.3s;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    background-color: #FFFFFF;
+    overflow: hidden;
+}
+
+.container-card-img {
+    height: 70%;
+    overflow: hidden;
+}
+
+.restaurant-card-caption {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0px 15px 15px;
+    line-height: 25px;
+    &__ico-heart {
+        margin-right: 25px;
+    }
+}
+

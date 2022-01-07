@@ -21,7 +21,7 @@
         <main>
             <!-- Bloc 1 (Image de fond) -->
             <div class="menu-bckground-img">
-                <img class="restaurant-bckground__img" src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo de La note enchantée"/>
+                <img class="restaurant-bckground__img restaurant-bckground__img-height-sup" src="../images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="Photo de La note enchantée"/>
             </div>
 
             <!-- Bloc 2 (Section 1 - Menu) -->
@@ -33,66 +33,92 @@
 
                 <!-- Sous-bloc 1 (Entrées) -->
                 <div class="menu appetizer">
-                    <h2 class="menu__title">Entrées</h2>
-                    <div class="dish">
-                        <h3 class="dish__title">Ravioles de foie gras</h3>
-                        <p class="dish__desc">Accompagnés de leur crème à la truffe</p>
-                        <p class="dish__price">25€</p>
-                    </div>
-                    <div class="dish">
-                        <h3 class="dish__title">Caviar osciètre</h3>
-                        <p class="dish__desc">Sur blini à la farine de blé noir</p>
-                        <p class="dish__price">35€</p>
-                    </div>
-                    <div class="dish">
-                        <h3 class="dish__title">Homard et espuma de potiron</h3>
-                        <p class="dish__desc">Mariné aux zestes d'orange</p>
-                        <p class="dish__price">20€</p>
-                    </div>
-                    <div class="dish">
-                        <h3 class="dish__title">Foie gras de canard cuit entier</h3>
-                        <p class="dish__desc">Confiture de figue et pain toasté</p>
-                        <p class="dish__price">35€</p>
+                    <h2 class="menu__title"><span class="menu__title--border">Entr</span>ées</h2>
+                    <div class="container__dish">
+                        <div class="dish">
+                            <h3 class="dish__title">Ravioles de foie gras</h3>
+                            <div class="dish__container-desc">
+                                <p class="dish__desc">Accompagnés de leur crème à la truffe</p>
+                                <p class="dish__price">25€</p>
+                            </div>
+                        </div>
+                        <div class="dish">
+                            <h3 class="dish__title">Caviar osciètre</h3>
+                            <div class="dish__container-desc">
+                                <p class="dish__desc">Sur blini à la farine de blé noir</p>
+                                <p class="dish__price">35€</p>
+                            </div>
+                        </div>
+                        <div class="dish">
+                            <h3 class="dish__title">Homard et espuma de potiron</h3>
+                            <div class="dish__container-desc">
+                                <p class="dish__desc">Mariné aux zestes d'orange</p>
+                                <p class="dish__price">20€</p>
+                            </div>
+                        </div>
+                        <div class="dish">
+                            <h3 class="dish__title">Foie gras de canard cuit entier</h3>
+                            <div class="dish__container-desc">
+                                <p class="dish__desc">Confiture de figue et pain toasté</p>
+                                <p class="dish__price">35€</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Sous-bloc 2 (Plats) -->
                 <div class="menu main-course">
-                    <h2 class="menu__title">Plats</h2>
-                    <div class="dish">
-                        <h3 class="dish__title">Noix de coquilles Saint-Jacques</h3>
-                        <p class="dish__desc">Sur lit de purée de céleri-rave</p>
-                        <p class="dish__price">40€</p>
-                    </div>
-                    <div class="dish">
-                        <h3 class="dish__title">Langoustine poêlée</h3>
-                        <p class="dish__desc">Purée de patate douce</p>
-                        <p class="dish__price">35€</p>
-                    </div>
-                    <div class="dish">
-                        <h3 class="dish__title">Mijoté de queue de boeuf</h3>
-                        <p class="dish__desc">Et riz sauvage aux zestes de citron</p>
-                        <p class="dish__price">44€</p>
+                    <h2 class="menu__title"><span class="menu__title--border">Plat</span>s</h2>
+                    <div class="container__dish">
+                        <div class="dish">
+                            <h3 class="dish__title">Noix de coquilles Saint-Jacques</h3>
+                            <div class="dish__container-desc">
+                                <p class="dish__desc">Sur lit de purée de céleri-rave</p>
+                                <p class="dish__price">40€</p>
+                            </div>
+                        </div>
+                        <div class="dish">
+                            <h3 class="dish__title">Langoustine poêlée</h3>
+                            <div class="dish__container-desc">
+                                <p class="dish__desc">Purée de patate douce</p>
+                                <p class="dish__price">35€</p>
+                            </div>
+                        </div>
+                        <div class="dish">
+                            <h3 class="dish__title">Mijoté de queue de boeuf</h3>
+                            <div class="dish__container-desc">
+                                <p class="dish__desc">Et riz sauvage aux zestes de citron</p>
+                                <p class="dish__price">44€</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
                 <!-- Sous-bloc 3 (Desserts) -->
                 <div class="menu dessert">
-                    <h2 class="menu__title">Desserts</h2>
-                    <div class="dish">
-                        <h3 class="dish__title">Macaron noisette et chocolat</h3>
-                        <p class="dish__desc">Glace au caramel brun et sel de Guérande</p>
-                        <p class="dish__price">18€</p>
-                    </div>
-                    <div class="dish">
-                        <h3 class="dish__title">Baba au rhum revisité</h3>
-                        <p class="dish__desc">Avec son coulis de citron</p>
-                        <p class="dish__price">22€</p>
-                    </div>
-                    <div class="dish">
-                        <h3 class="dish__title">Tarte au citron meringuée</h3>
-                        <p class="dish__desc">Déstructurée</p>
-                        <p class="dish__price">23€</p>
+                    <h2 class="menu__title"><span class="menu__title--border">Dess</span>erts</h2>
+                    <div class="container__dish">
+                        <div class="dish">
+                            <h3 class="dish__title">Macaron noisette et chocolat</h3>
+                            <div class="dish__container-desc">
+                                <p class="dish__desc">Glace au caramel brun et sel de Guérande</p>
+                                <p class="dish__price">18€</p>
+                            </div>
+                        </div>
+                        <div class="dish">
+                            <h3 class="dish__title">Baba au rhum revisité</h3>
+                            <div class="dish__container-desc">
+                                <p class="dish__desc">Avec son coulis de citron</p>
+                                <p class="dish__price">22€</p>
+                            </div>
+                        </div>
+                        <div class="dish">
+                            <h3 class="dish__title">Tarte au citron meringuée</h3>
+                            <div class="dish__container-desc">
+                                <p class="dish__desc">Déstructurée</p>
+                                <p class="dish__price">23€</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
 

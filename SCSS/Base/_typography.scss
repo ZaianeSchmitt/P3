@@ -6,19 +6,48 @@ html {
 }
 
 .main-wrapper {
-    font-family: $font-text;
+  font-family: $font-text;
   }
 
 // INDEX //
 .concept {
   &__title {
-      font-size: 1.6rem;
-      font-weight: bold;
+    font-size: 1.6rem;
+    font-weight: bold;
     }
   &__txt {
     font-size: 1.3rem;
     color: color-shift-bckgd($color-txt-default,$color-intro-loc);
     }
+}
+
+.process {
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+.steps__txt {
+  font-weight: bold;
+}
+
+.restaurant-index {
+  &__title {
+    font-size: 1.5rem;
+    font-weight: bold
+  }
+}
+
+.restaurant-card-caption {
+  &__title {
+    font-size: 1.1rem;
+    font-weight: bold;
+  }
+  &__txt {
+    font-size: 1.1rem;
+    color: lightening($color-txt-default);
+  }
 }
 
 // MENU //
@@ -29,13 +58,24 @@ html {
   }
 }
 
+.menu {
+  &__title {
+    text-transform: uppercase;
+    font-size: 1.1rem;
+    color: lightening($color-txt-default);
+  }
+}
+
 .dish {
   &__title {
-  font-size: 1.1rem;
-  font-weight: bold;
+    font-size: 1.1rem;
+    font-weight: bold;
   }
   &__desc {
-    color: lightening($color-txt-default)
+    color: lightening($color-txt-default);
+  }
+  &__price {
+    font-weight: bold;
   }
 }
 
@@ -56,4 +96,16 @@ html {
   font-family: $font-text;
   color: $color-txt-1;
   font-size: 1.15rem;
+}
+
+// NUMBER-ICO //
+.number__txt {
+  color: $color-txt-1;
+  font-size: 0.95rem;
+}
+
+// LABELS //
+.new-restaurant__txt {
+  color: darken($color-tertiary, 45%);
+  font-weight: bold;
 }
