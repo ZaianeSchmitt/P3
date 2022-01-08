@@ -41,6 +41,11 @@
     margin-bottom: 50px;
     &__steps {
         margin-top: 30px;
+        @include medium-device-above {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
     }
     &__title {
         margin-left: -10px;
@@ -86,6 +91,11 @@
 .restaurants-list {
     margin-top: 30px;
     padding-bottom: 50px;
+    @include medium-device-above {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
 }
 
 .new-restaurant__container {
@@ -104,6 +114,11 @@
     margin-bottom: 20px;
     background-color: #FFFFFF;
     overflow: hidden;
+    @include medium-device-above {
+        &__link {
+            width: 40%;
+        }
+    }
 }
 
 .container-card-img {

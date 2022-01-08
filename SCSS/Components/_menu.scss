@@ -16,12 +16,12 @@
         padding-left: 10px;
         padding-right: 30px;
         margin-bottom: -15px;
-        @include large-device-above {
+        @include medium-device-above {
             justify-content: center;
         }
     }
     &__title {
-        @include large-device-above {
+        @include medium-device-above {
             margin: 0px 30px;
             padding: 0px;
         }
@@ -50,7 +50,7 @@
 }
 
 .container__dish {
-    @include large-device-above {
+    @include medium-device-above {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
@@ -64,7 +64,7 @@
         background-color: $color-basic1;
         border-radius: 16px;
         @include shadow-primary;
-        @include large-device-above {
+        @include medium-device-above {
             width: 40%;
             margin-left: 5%;
             margin-right: 5%;
