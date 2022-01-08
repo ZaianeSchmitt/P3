@@ -57,3 +57,8 @@
     }
 }
 
+@mixin x-large-device-above {
+    @media screen and (min-width: map-get($breakpoints, x-large)){
+        @content;
+    }
+}

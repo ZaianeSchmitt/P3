@@ -16,5 +16,8 @@ header {
         @include x-small-device {
             margin-left: -15%;
         }
+        @include x-large-device-above {
+            margin-left: -240px;
+        }
     }
 }
