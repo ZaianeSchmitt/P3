@@ -4,7 +4,7 @@
         <meta charset="utf-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="../SCSS/main.css"/>
-        <script src="https://kit.fontawesome.com/96c7615c9a.js" crossorigin="anonymous"></script>
+        <script data-search-pseudo-elements defer src="https://kit.fontawesome.com/96c7615c9a.js" crossorigin="anonymous"></script>
         <title>Ohmyfood - restaurant À la française</title>
     </head>
  
@@ -28,7 +28,9 @@
             <section class="meals">
                 <div class="meals__title-ico">
                     <h1 class="meals__title">À la française</h1>
-                    <div class="meals__ico-heart"><i class="far fa-heart"></i></div>
+                    <div class="meals__ico-heart ico-heart--both">
+                        <i class="fa-regular fa-heart fa-heart--empty"></i><i class="fa-solid fa-heart fa-heart--fill"></i>
+                    </div>
                 </div>
 
                 <!-- Sous-bloc 1 (Entrées) -->

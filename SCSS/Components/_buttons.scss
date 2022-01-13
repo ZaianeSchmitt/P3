@@ -1,3 +1,4 @@
+// Button index & orders //
 .btn-main {
     display: block;
     background: $color-primary;
@@ -25,6 +26,46 @@
     margin-top: 50px;
 }
 
-.fa-heart {
-    font-size: 1.5rem;
-}
+// Heart icon //
+    // Base & Index - card //
+    .fa-heart {
+        font-size: 1.5rem;
+    }
+
+    .fa-heart {
+        &--empty {
+            color: $color-black;
+            position: relative;
+            z-index: 1;
+        }
+        &--fill {
+            @include heart-filling;
+            font-size: 1.55rem;
+            bottom: 30.5px;
+            right: 24.5px;
+        }
+    }
+
+    .ico-heart--both {       
+        &:hover {                  
+            .fa-heart--fill {
+                opacity: 1;
+            }
+        }          
+    }
+
+    // Menu //
+    .meals {
+        .fa-heart {
+            &--empty {
+                font-size: 1.6rem;
+                font-weight: normal;
+                color: $color-black;
+            }
+            &--fill {
+                font-size: 1.66rem;
+                bottom: unset;
+                right: unset;
+            }
+        }
+    }

@@ -142,6 +142,40 @@ html {
   font-size: 1.5rem;
 }
 
+.fa-heart--empty {
+  color: #000000;
+  position: relative;
+  z-index: 1;
+}
+.fa-heart--fill {
+  position: absolute;
+  z-index: 2;
+  background: linear-gradient(186deg, #a16be0 0%, #ff93e1 100%);
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  transition: opacity 650ms 50ms linear;
+  opacity: 0;
+  font-size: 1.55rem;
+  bottom: 30.5px;
+  right: 24.5px;
+}
+
+.ico-heart--both:hover .fa-heart--fill {
+  opacity: 1;
+}
+
+.meals .fa-heart--empty {
+  font-size: 1.6rem;
+  font-weight: normal;
+  color: #000000;
+}
+.meals .fa-heart--fill {
+  font-size: 1.66rem;
+  bottom: unset;
+  right: unset;
+}
+
 .menu-bckground-img {
   height: 300px;
   max-height: 300px;
@@ -177,9 +211,6 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-}
-.meals .fa-heart {
-  font-size: 25px;
 }
 
 .menu__title {
