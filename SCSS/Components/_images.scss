@@ -10,3 +10,9 @@
 .restaurant-bckground__img {
     @include basic-sizing-img;
 }
+
+// MENU //
+.menu-bckground-img {
+    height: 300px;
+    max-height: 300px;
+}

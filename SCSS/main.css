@@ -82,6 +82,7 @@ html {
 }
 .dish__price {
   font-weight: bold;
+  background-color: #FFFFFF;
 }
 
 .footer__list > li {
@@ -176,11 +177,6 @@ html {
   right: unset;
 }
 
-.menu-bckground-img {
-  height: 300px;
-  max-height: 300px;
-}
-
 .meals {
   border-top-left-radius: 40px;
   border-top-right-radius: 40px;
@@ -232,8 +228,8 @@ html {
   }
 }
 .container__dish .dish {
-  display: flex;
-  flex-direction: column;
+  position: relative;
+  overflow: hidden;
   padding: 10px 25px 10px 10px;
   margin-bottom: 20px;
   line-height: 26px;
@@ -251,6 +247,28 @@ html {
 .container__dish .dish__container-desc {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+}
+.container__dish .dish__container-desc .dish__title {
+  width: 100%;
+}
+.container__dish .dish__container-desc .dish__price {
+  width: 8%;
+}
+.container__dish .dish__container-anim {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  background-color: #99E2D0;
+  width: 20%;
+  height: 100%;
+  right: 0px;
+  bottom: 0px;
+}
+.container__dish .dish__container-anim .fa-check-circle {
+  font-size: 1.5rem;
+  color: #FFFFFF;
 }
 
 .number__circle {
@@ -286,10 +304,88 @@ html {
   width: 100%;
 }
 
+.menu-bckground-img {
+  height: 300px;
+  max-height: 300px;
+}
+
 .new-restaurant__txt {
   position: absolute;
   background-color: #99E2D0;
   padding: 5px 12px 5px 12px;
+}
+
+@-webkit-keyframes gradual-dish-display {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes gradual-dish-display {
+  0% {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+.dish {
+  opacity: 0;
+  transform: translateY(20px);
+  -webkit-animation: gradual-dish-display 1000ms both;
+          animation: gradual-dish-display 1000ms both;
+}
+.dish--1 {
+  -webkit-animation-delay: 250ms;
+          animation-delay: 250ms;
+}
+.dish--2 {
+  -webkit-animation-delay: 500ms;
+          animation-delay: 500ms;
+}
+.dish--3 {
+  -webkit-animation-delay: 750ms;
+          animation-delay: 750ms;
+}
+.dish--4 {
+  -webkit-animation-delay: 1000ms;
+          animation-delay: 1000ms;
+}
+
+.dish__price {
+  transform: translateX(0%);
+  transition: transform 500ms 50ms;
+}
+.dish__container-anim {
+  transform: translateX(500%);
+  transition: transform 500ms 50ms;
+}
+.dish .fa-check-circle {
+  transform: rotate(-360deg);
+  transition: transform 750ms 300ms;
+}
+
+.dish:hover .dish__desc, .dish:hover .dish__title {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 70%;
+}
+.dish:hover .dish__price {
+  transform: translateX(-220%);
+}
+.dish:hover .dish__container-anim {
+  transform: translateX(1%);
+}
+.dish:hover .fa-check-circle {
+  transform: rotate(0deg);
 }
 
 header {

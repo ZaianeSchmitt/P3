@@ -1,0 +1,67 @@
+// MENU //
+// Gradual display //
+$num-dish: 4;
+$gradual-dish-dur: 1000ms;
+$gradual-dish-delay: $gradual-dish-dur / $num-dish;
+
+@keyframes gradual-dish-display {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.dish {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: gradual-dish-display $gradual-dish-dur both;
+    @for $i from 1 through $num-dish {
+        &--#{$i} {
+            animation-delay: $gradual-dish-delay * $i;
+        }
+    }
+}
+
+
+
+// Hover green bg + check icon //
+.dish {
+    &__price {
+        transform: translateX(0%);
+        transition: transform 500ms 50ms;
+    }
+    &__container-anim {
+        transform: translateX(500%);
+        transition: transform 500ms 50ms;
+    }
+    .fa-check-circle {
+        transform: rotate(-360deg);
+        transition: transform 750ms 300ms;
+    }
+}
+
+.dish {
+    &:hover {
+        .dish__desc, .dish__title {
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+            width: 70%;
+        }
+        .dish__price {
+            transform: translateX(-220%)
+        }
+        .dish__container-anim {
+            transform: translateX(1%);
+        }
+        .fa-check-circle {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+
