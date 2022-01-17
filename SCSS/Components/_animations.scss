@@ -1,9 +1,57 @@
+// INDEX //
+// Loader //
+$loader-dot-delay: 100ms;
+$num-dot: 4;
+
+@keyframes loader-bg {
+    0%, 99% {
+        opacity: 0.5;
+        z-index: 9998;
+    }
+    100% {
+        z-index: -9999;
+    }
+}
+
+@keyframes loader-dots {
+    0%, 50%, 75%, 100% {
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(0px);
+        background: $color-primary;
+    }
+    50% {
+        transform: translateY(10px);
+        background: lighten($color-primary, 10%);
+    }
+    75% {
+        transform: translateY(10px);
+        background: lighten($color-secondary, 10%);
+    }
+    100% {
+        transform: translateY(0px);
+        background: darken($color-tertiary, 10%);
+    }
+}
+
+.loader__bg {
+    animation: loader-bg 4000ms linear forwards;
+}
+
+.loader__dot {
+    animation: loader-dots 1000ms 4 backwards;
+    @for $it-dot from 1 through $num-dot {
+        &--#{$it-dot} {
+            animation-delay: $loader-dot-delay * $it-dot;
+        }
+    }
+}
+
+
+
 // MENU //
 // Gradual display //
-$num-dish: 4;
-$gradual-dish-dur: 1000ms;
-$gradual-dish-delay: $gradual-dish-dur / $num-dish;
-
 @keyframes gradual-dish-display {
     0% {
         transform: translateY(20px);
@@ -17,15 +65,14 @@ $gradual-dish-delay: $gradual-dish-dur / $num-dish;
 
 .dish {
     opacity: 0;
-    transform: translateY(20px);
+    /*transform: translateY(20px);*/
     animation: gradual-dish-display $gradual-dish-dur both;
-    @for $i from 1 through $num-dish {
-        &--#{$i} {
-            animation-delay: $gradual-dish-delay * $i;
+    @for $it-dish from 1 through $num-dish {
+        &--#{$it-dish} {
+            animation-delay: $gradual-dish-delay * $it-dish;
         }
     }
 }
-
 
 
 // Hover green bg + check icon //
@@ -63,5 +110,3 @@ $gradual-dish-delay: $gradual-dish-dur / $num-dish;
         }
     }
 }
-
-

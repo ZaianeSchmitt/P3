@@ -15,6 +15,9 @@ $color-txt-1: #FFFFFF;
 $font-title: Shrikhand;
 $font-text: Roboto;
 
+$num-dish: 4;
+$gradual-dish-dur: 1000ms;
+$gradual-dish-delay: $gradual-dish-dur / $num-dish;
 
 $breakpoints: (
     x-small: 320px,

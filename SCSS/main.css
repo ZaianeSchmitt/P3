@@ -315,6 +315,93 @@ html {
   padding: 5px 12px 5px 12px;
 }
 
+@-webkit-keyframes loader-bg {
+  0%, 99% {
+    opacity: 0.5;
+    z-index: 9998;
+  }
+  100% {
+    z-index: -9999;
+  }
+}
+
+@keyframes loader-bg {
+  0%, 99% {
+    opacity: 0.5;
+    z-index: 9998;
+  }
+  100% {
+    z-index: -9999;
+  }
+}
+@-webkit-keyframes loader-dots {
+  0%, 50%, 75%, 100% {
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(0px);
+    background: #9356DC;
+  }
+  50% {
+    transform: translateY(10px);
+    background: #ae80e5;
+  }
+  75% {
+    transform: translateY(10px);
+    background: #fface8;
+  }
+  100% {
+    transform: translateY(0px);
+    background: #71d7be;
+  }
+}
+@keyframes loader-dots {
+  0%, 50%, 75%, 100% {
+    opacity: 1;
+  }
+  0% {
+    transform: translateY(0px);
+    background: #9356DC;
+  }
+  50% {
+    transform: translateY(10px);
+    background: #ae80e5;
+  }
+  75% {
+    transform: translateY(10px);
+    background: #fface8;
+  }
+  100% {
+    transform: translateY(0px);
+    background: #71d7be;
+  }
+}
+.loader__bg {
+  -webkit-animation: loader-bg 4000ms linear forwards;
+          animation: loader-bg 4000ms linear forwards;
+}
+
+.loader__dot {
+  -webkit-animation: loader-dots 1000ms 4 backwards;
+          animation: loader-dots 1000ms 4 backwards;
+}
+.loader__dot--1 {
+  -webkit-animation-delay: 100ms;
+          animation-delay: 100ms;
+}
+.loader__dot--2 {
+  -webkit-animation-delay: 200ms;
+          animation-delay: 200ms;
+}
+.loader__dot--3 {
+  -webkit-animation-delay: 300ms;
+          animation-delay: 300ms;
+}
+.loader__dot--4 {
+  -webkit-animation-delay: 400ms;
+          animation-delay: 400ms;
+}
+
 @-webkit-keyframes gradual-dish-display {
   0% {
     transform: translateY(20px);
@@ -338,7 +425,7 @@ html {
 }
 .dish {
   opacity: 0;
-  transform: translateY(20px);
+  /*transform: translateY(20px);*/
   -webkit-animation: gradual-dish-display 1000ms both;
           animation: gradual-dish-display 1000ms both;
 }
@@ -386,6 +473,38 @@ html {
 }
 .dish:hover .fa-check-circle {
   transform: rotate(0deg);
+}
+
+.loader__bg {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #ebebeb;
+  opacity: 0;
+  z-index: 9998;
+}
+
+.loader {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  z-index: 9999;
+  top: 50%;
+  left: 50%;
+  width: 50px;
+  height: 50px;
+  margin-top: -25px;
+  margin-left: -25px;
+}
+.loader__dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #99E2D0;
+  opacity: 0;
 }
 
 header {
