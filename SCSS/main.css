@@ -114,6 +114,7 @@ html {
 
 .btn-main {
   display: block;
+  position: relative;
   background: #9356DC;
   background: linear-gradient(355deg, #9356DC 0%, #FF79DA 100%);
   padding: 15px;
@@ -122,12 +123,27 @@ html {
   border-radius: 30px;
   box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.15);
   border: none;
-  transition: 0.25s;
+  z-index: 1;
 }
-.btn-main:hover {
-  background: #a16be0;
+.btn-main:hover::after {
+  opacity: 1;
+  /*background: lighten-gradient($color-primary);
+  background: linear-gradient(355deg, lighten-gradient($color-primary) 0%, lighten-gradient($color-secondary) 100%);
+  @include shadow-hover; */
+}
+.btn-main::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  border-radius: 30px;
   background: linear-gradient(355deg, #a16be0 0%, #ff93e1 100%);
   box-shadow: 0px 4px 9px 0px rgba(0, 0, 0, 0.38);
+  opacity: 0;
+  transition: 0.25s;
+  z-index: -1;
 }
 
 .intro__btn {
