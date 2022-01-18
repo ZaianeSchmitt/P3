@@ -1,9 +1,11 @@
  // INDEX - RESTAURANT CARDS //   
 .restaurant-card__img {
     @include basic-sizing-img;
-    object-position: center bottom;
+    -o-object-position: center bottom;
+       object-position: center bottom;
     &-height-sup {
-        object-position: center 60%;
+        -o-object-position: center 60%;
+           object-position: center 60%;
     }
 }
 

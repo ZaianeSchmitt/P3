@@ -57,7 +57,8 @@
             position: absolute;
             z-index: 2;
             background: linear-gradient(186deg, lighten-gradient($color-primary) 0%, lighten-gradient($color-secondary) 100%);
-            background-clip: text;
+            -webkit-background-clip: text;
+                    background-clip: text;
             color: transparent;
             transition: opacity 600ms 50ms linear;
             opacity: 0;

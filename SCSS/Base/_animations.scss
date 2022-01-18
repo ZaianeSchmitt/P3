@@ -1,5 +1,14 @@
 // INDEX //
 // Loader //
+@-webkit-keyframes loader-bg {
+    0%, 99% {
+        opacity: 0.4;
+        z-index: 9998;
+    }
+    100% {
+        z-index: -9999;
+    }
+}
 @keyframes loader-bg {
     0%, 99% {
         opacity: 0.4;
@@ -7,6 +16,28 @@
     }
     100% {
         z-index: -9999;
+    }
+}
+
+@-webkit-keyframes loader-dots {
+    0%, 50%, 75%, 100% {
+        opacity: 1;
+    }
+    0% {
+        transform: translateY(0px);
+        background: $color-primary;
+    }
+    50% {
+        transform: translateY(10px);
+        background: lighten($color-primary, 10%);
+    }
+    75% {
+        transform: translateY(10px);
+        background: lighten($color-secondary, 10%);
+    }
+    100% {
+        transform: translateY(0px);
+        background: darken($color-tertiary, 10%);
     }
 }
 
@@ -33,20 +64,33 @@
 }
 
 .loader__bg {
-    animation: loader-bg 4000ms linear forwards;
+    -webkit-animation: loader-bg 4000ms linear forwards;
+            animation: loader-bg 4000ms linear forwards;
 }
 
 .loader__dot {
-    animation: loader-dots 1000ms 4 backwards;
+    -webkit-animation: loader-dots 1000ms 4 backwards;
+            animation: loader-dots 1000ms 4 backwards;
     @for $it-dot from 1 through $num-dot {
         &--#{$it-dot} {
-            animation-delay: $loader-dot-delay * $it-dot;
+            -webkit-animation-delay: $loader-dot-delay * $it-dot;
+                    animation-delay: $loader-dot-delay * $it-dot;
         }
     }
 }
 
 // MENU //
 // Gradual display //
+@-webkit-keyframes gradual-dish-display {
+    0% {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
 @keyframes gradual-dish-display {
     0% {
         transform: translateY(20px);
@@ -60,10 +104,12 @@
 
 .dish {
     opacity: 0;
-    animation: gradual-dish-display $gradual-dish-dur both;
+    -webkit-animation: gradual-dish-display $gradual-dish-dur both;
+            animation: gradual-dish-display $gradual-dish-dur both;
     @for $it-dish from 1 through $num-dish {
         &--#{$it-dish} {
-            animation-delay: $gradual-dish-delay * $it-dish;
+            -webkit-animation-delay: $gradual-dish-delay * $it-dish;
+                    animation-delay: $gradual-dish-delay * $it-dish;
         }
     }
 }
