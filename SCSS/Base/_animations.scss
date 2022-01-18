@@ -1,11 +1,8 @@
 // INDEX //
 // Loader //
-$loader-dot-delay: 100ms;
-$num-dot: 4;
-
 @keyframes loader-bg {
     0%, 99% {
-        opacity: 0.5;
+        opacity: 0.4;
         z-index: 9998;
     }
     100% {
@@ -48,8 +45,6 @@ $num-dot: 4;
     }
 }
 
-
-
 // MENU //
 // Gradual display //
 @keyframes gradual-dish-display {
@@ -65,7 +60,6 @@ $num-dot: 4;
 
 .dish {
     opacity: 0;
-    /*transform: translateY(20px);*/
     animation: gradual-dish-display $gradual-dish-dur both;
     @for $it-dish from 1 through $num-dish {
         &--#{$it-dish} {
@@ -73,7 +67,6 @@ $num-dot: 4;
         }
     }
 }
-
 
 // Hover green bg + check icon //
 .dish {

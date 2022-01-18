@@ -11,21 +11,18 @@
     @include shadow-primary;
     border: none;
     z-index: 1;
+    font-family: $font-text;
+    color: $color-txt-1;
+    font-size: 1.15rem;
     &:hover {
         &::after {
             opacity: 1;
-            /*background: lighten-gradient($color-primary);
-            background: linear-gradient(355deg, lighten-gradient($color-primary) 0%, lighten-gradient($color-secondary) 100%);
-            @include shadow-hover; */  
         }
     }
     &::after {
         content: "";
         position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
+        @include position-0;
         border-radius: 30px;
         background: linear-gradient(355deg, lighten-gradient($color-primary) 0%, lighten-gradient($color-secondary) 100%);
         @include shadow-hover;
@@ -57,7 +54,13 @@
             z-index: 1;
         }
         &--fill {
-            @include heart-filling;
+            position: absolute;
+            z-index: 2;
+            background: linear-gradient(186deg, lighten-gradient($color-primary) 0%, lighten-gradient($color-secondary) 100%);
+            background-clip: text;
+            color: transparent;
+            transition: opacity 600ms 50ms linear;
+            opacity: 0;
             font-size: 1.55rem;
             bottom: 30.5px;
             right: 24.5px;

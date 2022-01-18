@@ -91,22 +91,3 @@ html {
       color: $color-txt-1;
   }
 }
-
-// BUTTON //
-.btn-main {
-  font-family: $font-text;
-  color: $color-txt-1;
-  font-size: 1.15rem;
-}
-
-// NUMBER-ICO //
-.number__txt {
-  color: $color-txt-1;
-  font-size: 0.95rem;
-}
-
-// LABELS //
-.new-restaurant__txt {
-  color: darken($color-tertiary, 45%);
-  font-weight: bold;
-}
