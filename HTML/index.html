@@ -6,9 +6,19 @@
         <link rel="stylesheet" type="text/css" href="../SCSS/main.css"/>
         <script src="https://kit.fontawesome.com/96c7615c9a.js" crossorigin="anonymous"></script>
         <title>Ohmyfood</title>
+        <meta name="description" content="Répertoire des menus des restaurants gastronomiques. Composez le menu de votre repas pour en finir avec les files d'attente.">
     </head>
  
     <body>
+        <div class="loader__bg">
+            <div class="loader">
+                <div class="loader__dot loader__dot--1"></div>
+                <div class="loader__dot loader__dot--2"></div>
+                <div class="loader__dot loader__dot--3"></div>
+                <div class="loader__dot loader__dot--4"></div>
+            </div>
+        </div>
+
     <div class="main-wrapper">
         <!-- Header -->
         <header>
@@ -56,7 +66,7 @@
             <section class="restaurant-index">
                 <h2 class="restaurant-index__title">Restaurants</h2>
                 <article class="restaurants-list">
-                    <a class="restaurant-card__link" href="#">
+                    <a class="restaurant-card__link" href="menu_la-palette-du-gout.html">
                         <figure class="restaurant-card">
                             <div class="new-restaurant__container">
                                 <p class="new-restaurant__txt">Nouveau</p>
@@ -69,11 +79,13 @@
                                     <h3 class="restaurant-card-caption__title">La palette du goût</h3>
                                     <p class="restaurant-card-caption__txt">Ménilmontant</p>
                                 </div>
-                                <div class="restaurant-card-caption__ico-heart"><i class="fa-regular fa-heart"></i></div>
+                                <div class="restaurant-card-caption__ico-heart ico-heart--both">
+                                    <i class="fa-regular fa-heart fa-heart--empty"></i><i class="fa-solid fa-heart fa-heart--fill"></i>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
-                    <a class="restaurant-card__link" href="#">
+                    <a class="restaurant-card__link" href="menu_la-note-enchantee.html">
                         <figure class="restaurant-card">
                             <div class="new-restaurant__container">
                                 <p class="new-restaurant__txt">Nouveau</p>
@@ -86,11 +98,13 @@
                                     <h3 class="restaurant-card-caption__title">La note enchantée</h3>
                                     <p class="restaurant-card-caption__txt">Charonne</p>
                                 </div>
-                                <div class="restaurant-card-caption__ico-heart"><i class="fa-regular fa-heart"></i></div>
+                                <div class="restaurant-card-caption__ico-heart ico-heart--both">
+                                    <i class="fa-regular fa-heart fa-heart--empty"></i><i class="fa-solid fa-heart fa-heart--fill"></i>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
-                    <a class="restaurant-card__link" href="#">
+                    <a class="restaurant-card__link" href="menu_a-la-francaise.html">
                         <figure class="restaurant-card">
                             <div class="container-card-img">
                                 <img class="restaurant-card__img card-img__3" src="../images/restaurants/toa-heftiba-DQKerTsQwi0-unsplash.jpg" alt="Photo de À la française"/>
@@ -100,11 +114,13 @@
                                     <h3 class="restaurant-card-caption__title">À la française</h3>
                                     <p class="restaurant-card-caption__txt">Cité Rouge</p>
                                 </div>
-                                <div class="restaurant-card-caption__ico-heart"><i class="fa-regular fa-heart"></i></div>
+                                <div class="restaurant-card-caption__ico-heart ico-heart--both">
+                                    <i class="fa-regular fa-heart fa-heart--empty"></i><i class="fa-solid fa-heart fa-heart--fill"></i>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>
-                    <a class="restaurant-card__link" href="#">
+                    <a class="restaurant-card__link" href="menu_le-delice-de-sens.html">
                         <figure class="restaurant-card">
                             <div class="container-card-img">
                                 <img class="restaurant-card__img card-img__4" src="../images/restaurants/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg" alt="Photo de Le délice des sens"/>
@@ -114,7 +130,9 @@
                                     <h3 class="restaurant-card-caption__title">Le délice des sens</h3>
                                     <p class="restaurant-card-caption__txt">Folie-Méricourt</p>
                                 </div>
-                                <div class="restaurant-card-caption__ico-heart"><i class="fa-regular fa-heart"></i></div>
+                                <div class="restaurant-card-caption__ico-heart ico-heart--both">
+                                    <i class="fa-regular fa-heart fa-heart--empty"></i><i class="fa-solid fa-heart fa-heart--fill"></i>
+                                </div>
                             </figcaption>
                         </figure>
                     </a>

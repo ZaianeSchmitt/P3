@@ -3,10 +3,21 @@ header {
     justify-content: center;
     .header__logo {
         padding-top: 20px;
-        padding-bottom: 20px;
+        padding-bottom: 8px;
         width: 190px;
     }
     .fa-arrow-left {
         position: absolute;
+        color: #000000;
+        font-weight: bold;
+        font-size: 1.5rem;
+        margin-left: -20%;
+        margin-top: 25px;
+        @include x-small-device {
+            margin-left: -15%;
+        }
+        @include x-large-device-above {
+            margin-left: -240px;
+        }
     }
 }

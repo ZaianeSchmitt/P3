@@ -1,12 +1,20 @@
  // INDEX - RESTAURANT CARDS //   
 .restaurant-card__img {
     @include basic-sizing-img;
-    object-position: center bottom;
+    -o-object-position: center bottom;
+       object-position: center bottom;
     &-height-sup {
-        object-position: center 60%;
+        -o-object-position: center 60%;
+           object-position: center 60%;
     }
 }
 
 .restaurant-bckground__img {
     @include basic-sizing-img;
+}
+
+// MENU //
+.menu-bckground-img {
+    height: 300px;
+    max-height: 300px;
 }

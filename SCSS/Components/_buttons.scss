@@ -1,18 +1,34 @@
+// Button index & orders //
 .btn-main {
     display: block;
+    position: relative;
     background: $color-primary;
-    background: linear-gradient(355deg, $color-primary 0%, $color-secondary 100%); 
+    background: linear-gradient(355deg, $color-primary 0%, $color-secondary 100%);
     padding: 15px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 30px;
     @include shadow-primary;
     border: none;
-    transition: 0.25s;
+    z-index: 1;
+    font-family: $font-text;
+    color: $color-txt-1;
+    font-size: 1.15rem;
     &:hover {
-        background: lighten-gradient($color-primary);
+        &::after {
+            opacity: 1;
+        }
+    }
+    &::after {
+        content: "";
+        position: absolute;
+        @include position-0;
+        border-radius: 30px;
         background: linear-gradient(355deg, lighten-gradient($color-primary) 0%, lighten-gradient($color-secondary) 100%);
-        @include shadow-hover;   
+        @include shadow-hover;
+        opacity: 0;
+        transition: 0.25s;
+        z-index: -1;
     }
 }
 
@@ -25,6 +41,53 @@
     margin-top: 50px;
 }
 
-.fa-heart {
-    font-size: 1.5rem;
-}
+// Heart icon //
+    // Base & Index - card //
+    .fa-heart {
+        font-size: 1.5rem;
+    }
+
+    .fa-heart {
+        &--empty {
+            color: $color-black;
+            position: relative;
+            z-index: 1;
+        }
+        &--fill {
+            position: absolute;
+            z-index: 2;
+            background: linear-gradient(186deg, lighten-gradient($color-primary) 0%, lighten-gradient($color-secondary) 100%);
+            -webkit-background-clip: text;
+                    background-clip: text;
+            color: transparent;
+            transition: opacity 600ms 50ms linear;
+            opacity: 0;
+            font-size: 1.55rem;
+            bottom: 30.5px;
+            right: 24.5px;
+        }
+    }
+
+    .ico-heart--both {       
+        &:hover {                  
+            .fa-heart--fill {
+                opacity: 1;
+            }
+        }          
+    }
+
+    // Menu //
+    .meals {
+        .fa-heart {
+            &--empty {
+                font-size: 1.6rem;
+                font-weight: normal;
+                color: $color-black;
+            }
+            &--fill {
+                font-size: 1.66rem;
+                bottom: unset;
+                right: unset;
+            }
+        }
+    }
