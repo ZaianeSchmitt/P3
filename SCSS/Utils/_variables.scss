@@ -21,7 +21,7 @@ $footer-bckground-clr: #353535;
 // ANIMATIONS //
 $num-dish: 4;
 $gradual-dish-dur: 1000ms;
-$gradual-dish-delay: $gradual-dish-dur / $num-dish;
+$gradual-dish-delay: calc($gradual-dish-dur / $num-dish);
 $loader-dot-delay: 100ms;
 $num-dot: 4;
 
